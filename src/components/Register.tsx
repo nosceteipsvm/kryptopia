@@ -33,18 +33,18 @@ const Register: React.FC = () => {
 			    <form  className="bg-black shadow-md rounded px-8 pt-6 pb-8 mb-4">
 			      <h1 className="text-2xl text-center text-gray-300 mb-3 pb-4">Sign up into Cryptopia</h1>
 			      <div className="mb-4">
-			        <input name="email" value={fields.email} onChange={(e) => handleChange(e)} className="shadow appearance-none rounded w-full py-2 px-3 text-gray-400 leading-tight focus:outline-none focus:shadow-outline  bg-black border-b border-gray-800" id="email" type="text" placeholder="Email Adress"/>
+			        <input name="email" value={fields.email} onChange={(e) => handleChange(e)} className="shadow appearance-none rounded w-full py-2 px-3 text-gray-400 leading-tight focus:outline-none bg-black border-b border-gray-800 placeholder-gray-700" id="email" type="text" placeholder="Email Adress"/>
 			      </div>
 			      <div className="mb-4">
-			        <input name="username" value={fields.username} onChange={(e) => handleChange(e)} className="shadow appearance-none rounded w-full py-2 px-3 text-gray-400 leading-tight focus:outline-none focus:shadow-outline  bg-black border-b border-gray-800" id="username" type="username" placeholder="Username"/>
+			        <input name="username" value={fields.username} onChange={(e) => handleChange(e)} className="shadow appearance-none rounded w-full py-2 px-3 text-gray-400 leading-tight focus:outline-none bg-black border-b border-gray-800 placeholder-gray-700" id="username" type="username" placeholder="Username"/>
 			      </div>
 			      <div className="mb-2">
-			        <input name="password" value={fields.password} onChange={(e) => handleChange(e)} className="shadow appearance-none rounded w-full py-2 px-3 text-gray-400 mb-3 leading-tight focus:outline-none focus:shadow-outline bg-black border-b border-gray-800" id="password" type="password" name="password" placeholder="Password"/>
+			        <input name="password" value={fields.password} onChange={(e) => handleChange(e)} className="shadow appearance-none rounded w-full py-2 px-3 text-gray-400 leading-tight focus:outline-none bg-black border-b border-gray-800 placeholder-gray-700" id="password" type="password" name="password" placeholder="Password"/>
 			      </div>
 			      <div className="mb-2">
-			        <input name="confirm_password" value={fields.confirm_password} onChange={(e) => handleChange(e)} className="shadow appearance-none rounded w-full py-2 px-3 text-gray-400 mb-3 leading-tight focus:outline-none focus:shadow-outline bg-black border-b border-gray-800" id="confirm_password" type="password" placeholder="Confirm Password"/>
+			        <input name="confirm_password" value={fields.confirm_password} onChange={(e) => handleChange(e)} className="shadow appearance-none rounded w-full py-2 px-3 text-gray-400 leading-tight focus:outline-none bg-black border-b border-gray-800 placeholder-gray-700" id="confirm_password" type="password" placeholder="Confirm Password"/>
 			      </div>
-			      <div className="flex items-center justify-between">
+			      <div className="flex items-center justify-between pt-3">
 			        <button className="w-full gradient-b hover:text-indigo-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
 			          Sign Up
 			        </button>
@@ -52,6 +52,9 @@ const Register: React.FC = () => {
 			      <div className="pt-4">
 			        <a className="inline-block align-baseline font-bold text-sm text-gray-500 hover:text-gray-600 mr-4" href="/login">
 			          Sign In
+			        </a>
+			        <a className="inline-block align-baseline font-bold text-sm text-gray-500 hover:text-gray-600 mr-4" href="/login">
+			          Recover Account
 			        </a>
 			      </div>
 			    </form>

@@ -9,7 +9,7 @@ const Navigation = () => {
 				<div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
 						
 					<div className="pl-4 flex items-center">
-						<Link className="toggleColour text-orange-300 no-underline hover:no-underline font-bold text-2xl lg:text-2xl uppercase"  to="/">cryptopia
+						<Link className="toggleColour text-orange-300 no-underline hover:no-underline font-bold text-2xl lg:text-2xl uppercase"  to="/">kryptopia
 						</Link>
 					</div>
 
@@ -28,11 +28,17 @@ const Navigation = () => {
 								<Link className="inline-block text-white font-semibold no-underline hover:text-indigo-200 hover:text-underline py-2 px-4 capitalize" to="/">data</Link>
 							</li>
 							<li className="mr-3">
+								<Link className="inline-block text-white font-semibold no-underline hover:text-indigo-200 hover:text-underline py-2 px-4 capitalize" to="/">prices</Link>
+							</li>
+							<li className="mr-8">
+								<Link className="inline-block py-2 px-4 text-white font-semibold  hover:text-indigo-200 no-underline capitalize" to="/">support</Link>
+							</li>
+							<li className="mr-3">
 								<Link className="inline-block text-white font-semibold no-underline hover:text-indigo-200 hover:text-underline py-2 px-4 capitalize" to="/login">signin</Link>
 							</li>
 						</ul>
 						<Link to="/register">
-							<button id="navAction" className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-2 px-4 shadow opacity-75 capitalize">signup</button>
+							<button id="navAction" className="mx-auto lg:mx-0 hover:underline bg-white text-black hover:text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-2 px-4 shadow opacity-75 capitalize text-lg outline-none focus:outline-none">signup</button>
 						</Link>
 					</div>
 				</div>
