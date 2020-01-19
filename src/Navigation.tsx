@@ -2,6 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Navigation = () => {
+	const closeNav = async () => {
+		const navMenuDiv: HTMLElement|null = await document.getElementById("nav-content");
+		if (navMenuDiv) navMenuDiv.classList.add("hidden");
+	}
+
 	return (
 		<>
 			<nav id="header" className="fixed w-full z-60 top-0 text-white px-6">
@@ -21,34 +26,34 @@ const Navigation = () => {
 
 					<div className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 lg:bg-transparent text-white p-4 lg:p-0 z-20" id="nav-content">
 						<ul className="list-reset lg:flex justify-end flex-1 items-center">
-							<li className="mr-3">
+							<li className="mr-3" onClick={closeNav}>
 								<a className="inline-block py-2 px-4 text-white font-semibold  hover:text-indigo-200 no-underline capitalize" href="/#about" id="nLink">
 									about
 								</a>
 							</li>
-							<li className="mr-3">
+							<li className="mr-3" onClick={closeNav}>
 								<a className="inline-block text-white font-semibold no-underline hover:text-indigo-200 hover:text-underline py-2 px-4 capitalize" href="/#data" id="nLink">
 									data
 								</a>
 							</li>
-							<li className="mr-3">
+							<li className="mr-3" onClick={closeNav}>
 								<a className="inline-block text-white font-semibold no-underline hover:text-indigo-200 hover:text-underline py-2 px-4 capitalize" href="/#pricing" id="nLink">
 									pricing
 								</a>
 							</li>
-							<li className="mr-8">
+							<li className="mr-8" onClick={closeNav}>
 								<a className="inline-block py-2 px-4 text-white font-semibold  hover:text-indigo-200 no-underline capitalize" href="/#support" id="nLink">
 									support
 								</a>
 							</li>
-							<li className="mr-3">
+							<li className="mr-3" onClick={closeNav}>
 								<Link className="inline-block text-white font-semibold no-underline hover:text-indigo-200 hover:text-underline py-2 px-4 capitalize" to="/login" id="nLink">
 									signin
 								</Link>
 							</li>
 						</ul>
 						<Link to="/register">
-							<button id="navAction" className="mx-auto lg:mx-0 bg-transparent text-white hover:text-gray-200 border border-white font-semibold rounded-full mt-4 lg:mt-0 py-1 px-4 shadow capitalize text-lg focus:outline-none hover:border-black hover:text-gray-800">
+							<button id="navAction" className="mx-auto lg:mx-0 bg-transparent text-white hover:text-gray-200 border border-white font-semibold rounded-full mt-4 lg:mt-0 py-1 px-4 shadow capitalize text-lg focus:outline-none hover:border-black hover:text-gray-800" onClick={closeNav}>
 								join us
 							</button>
 						</Link>

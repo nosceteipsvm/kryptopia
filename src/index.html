@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/main.scss">
-	<title>ReactApp</title>
+	<title>kryptopia</title>
 </head>
 <body class="gradient">
 	<div id="root"></div>
@@ -33,10 +33,8 @@
       }
 
   });
-
   
 </script>
-
 <script>
   
   var navMenuDiv = document.getElementById("nav-content");
@@ -73,6 +71,12 @@
     t = t.parentNode;
     }
     return false;
+  }
+
+  
+
+   async function closeNav() {
+    if (navcontent) navcontent.classList.add("hidden");
   }
 </script>
 </html>

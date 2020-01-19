@@ -40,7 +40,7 @@ const Landing: React.FC = () => {
 				
 					<div className="flex flex-wrap">
 						<div className="w-full sm:w-1/2 p-6">
-							<h3 className="text-3xl text-gray-500 font-bold leading-none mb-3 text-center md:text-left">Flexitarian cold-pressed +1</h3>
+							<h3 className="text-3xl text-gray-500 font-light leading-none mb-3 text-center md:text-left">Flexitarian cold-pressed +1</h3>
 							<p className="text-gray-400 mb-8 text-center md:text-left">
 								Mustache ennui swag, readymade taxidermy glossier williamsburg edison bulb bicycle rights art party. Ramps man braid post-ironic chartreuse selvage occupy yuccie tilde craft beer cliche readymade salvia waistcoat.<br/><br/>
 								Dreamcatcher before they sold out street art pour-over truffaut mumblecore, roof party snackwave asymmetrical shabby chic mlkshk kitsch four loko vexillologist.
@@ -56,7 +56,7 @@ const Landing: React.FC = () => {
 						</div>			
 						<div className="w-full sm:w-1/2 p-6 mt-6">
 							<div className="align-middle">
-								<h3 className="text-3xl text-gray-500 font-bold leading-none mb-3 text-center md:text-left">Mlkshk</h3>
+								<h3 className="text-3xl text-gray-500 font-light leading-none mb-3 text-center md:text-left">Mlkshk</h3>
 								<p className="text-gray-400 mb-8 text-center md:text-left">
 									Retro affogato farm-to-table, tattooed woke poutine before they sold out 90's 8-bit. Flexitarian art party artisan drinking vinegar, edison bulb vegan hashtag slow-carb portland. Leggings authentic biodiesel, chia photo booth trust fund synth adaptogen air plant polaroid. VHS echo park shabby chic yr, synth typewriter skateboard <a className="text-indigo-500 underline" href="https://undraw.co/">unicorn</a> tofu quinoa man braid activated charcoal you probably haven't heard of them. Shabby chic unicorn put a bird on it health goth deep v. Woke hell of four loko bitters vegan hammock flannel stumptown.<br /><br />
 								</p>
